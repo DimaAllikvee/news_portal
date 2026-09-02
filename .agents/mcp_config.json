@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "jira": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-jira"
+      ],
+      "env": {
+        "JIRA_HOST": "https://ivkhk-team-newportaltest.atlassian.net",
+        "JIRA_EMAIL": "YOUR_EMAIL_HERE",
+        "JIRA_API_TOKEN": "YOUR_API_TOKEN_HERE"
+      }
+    }
+  }
+}
