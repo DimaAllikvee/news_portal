@@ -1,42 +1,42 @@
 # News Portal (MVC PHP Project)
 
-Простой новостной портал, написанный на чистом PHP (без использования сторонних фреймворков) с применением архитектурного паттерна MVC (Model-View-Controller) и базы данных MySQL.
+A simple news portal written in plain PHP (without third-party frameworks) using the MVC (Model-View-Controller) architectural pattern and a MySQL database.
 
-## Основной функционал
+## Core Features
 
-- **Главная страница**: Вывод последних добавленных новостей.
-- **Категории**: Фильтрация новостей по категориям.
-- **Подробный просмотр**: Чтение полного текста новости.
-- **Комментарии**: Возможность оставлять комментарии под новостями (подсчет комментариев).
-- **Регистрация и авторизация**: Система пользователей (обычные пользователи и администратор).
+- **Home Page**: Displays the latest news articles.
+- **Categories**: Filter news by category.
+- **Detailed View**: Read the full text of a news article.
+- **Comments**: Ability to leave comments under news articles (including comment count).
+- **User Authentication**: Registration and login system (for regular users and administrators).
 
-## Панель администратора
-В проекте реализована защищенная панель администратора с полным CRUD (Create, Read, Update, Delete) функционалом для новостей:
-- Просмотр списка всех новостей.
-- Добавление новых записей с загрузкой изображений.
-- Редактирование существующих новостей (текст, заголовок, категория, замена картинки).
-- Удаление новостей.
+## Admin Panel
+The project includes a secure admin panel with full CRUD (Create, Read, Update, Delete) functionality for news:
+- View a list of all news articles.
+- Add new records with image uploading.
+- Edit existing news (text, title, category, and replace image).
+- Delete news.
 
-## Технологический стек
-- **Backend**: PHP (ООП, PDO, паттерн MVC).
+## Technology Stack
+- **Backend**: PHP (OOP, PDO, MVC pattern).
 - **Frontend**: HTML5, CSS3 (Bootstrap 3/4).
-- **База данных**: MySQL.
+- **Database**: MySQL.
 
-## Структура проекта
-- `/admin` — панель управления сайтом со своим MVC (модели, виды, контроллеры и роутинг).
-- `/controller` — основные контроллеры публичной части сайта.
-- `/model` — классы для работы с базой данных (News, Category, Comments, Register).
-- `/view` — HTML-шаблоны и представления для публичной части.
-- `/inc` — файлы конфигурации (включая подключение к БД).
-- `/images` — директория для хранения загруженных картинок.
+## Project Structure
+- `/admin` — Administration panel with its own MVC (models, views, controllers, and routing).
+- `/controller` — Main controllers for the public part of the site.
+- `/model` — Database interaction classes (News, Category, Comments, Register).
+- `/view` — HTML templates and views for the public part.
+- `/inc` — Configuration files (including DB connection).
+- `/images` — Directory for storing uploaded images.
 
-## Установка и запуск
+## Installation and Setup
 
-1. Склонируйте репозиторий в папку локального веб-сервера (например, `htdocs` для XAMPP):
+1. Clone the repository into your local web server directory (e.g., `htdocs` for XAMPP):
    ```bash
    git clone https://github.com/DimaAllikvee/news_portal.git
    ```
-2. Импортируйте дамп базы данных `news_database.sql` через phpMyAdmin.
-3. Убедитесь, что настройки подключения к БД в файле `inc/Database.php` верны (по умолчанию логин `root`, пустой пароль, база `news_portal`).
-4. Откройте браузер и перейдите по адресу `http://localhost/news_portal/`.
-5. Для входа в админ-панель используйте адрес `http://localhost/news_portal/admin/` (Учетные данные: `admin@newsportal.ee` / `123456`).
+2. Import the database dump `news_database.sql` via phpMyAdmin.
+3. Ensure the DB connection settings in `inc/Database.php` are correct (default is login `root`, empty password, database `news_portal`).
+4. Open your browser and go to `http://localhost/news_portal/`.
+5. To access the admin panel, navigate to `http://localhost/news_portal/admin/` (Credentials: `admin@newsportal.ee` / `123456`).
