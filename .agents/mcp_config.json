@@ -8,8 +8,8 @@
       ],
       "env": {
         "JIRA_HOST": "https://ivkhk-team-newportaltest.atlassian.net",
-        "JIRA_EMAIL": "YOUR_EMAIL_HERE",
-        "JIRA_API_TOKEN": "YOUR_API_TOKEN_HERE"
+        "JIRA_EMAIL": "Dmitri.Allikvee@ivkhk.ee",
+        "JIRA_API_TOKEN": "ATATT3xFfGF0t0vDKM4DcR6Bu9Ohu0qEhQ5LiA1b-n1kCw4yU48E0-r73JSUtlhzAYtmuZ_0hx1W_QYvHjSBlgE5r19NkUOSoR0-RPpDCViyqtiE6CQZjRwsT4Moh5piNpJyp5Bm0G6R15SMcEwHZGrekrOYGfua5VA0WBF9TU6zfQQbc4gHArc=3FA9AAA5"
       }
     }
   }

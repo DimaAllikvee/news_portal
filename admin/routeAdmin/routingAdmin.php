@@ -41,6 +41,28 @@ elseif($path=='newsDel' && isset($_GET['id'])) {
 elseif($path == 'newsDelResult' && isset($_GET['id'])) {
     $response = controllerAdminNews::newsDeleteResult($_GET['id']);
 }
+//-------------------------------------------------------Categories
+elseif ($path == 'categoryAdmin') {
+    $response = controllerAdminCategory::categoryList();
+}
+elseif ($path == 'categoryAdd') {
+    $response = controllerAdminCategory::categoryAddForm();
+}
+elseif ($path == 'categoryAddResult') {
+    $response = controllerAdminCategory::categoryAddResult();
+}
+elseif ($path == 'categoryEdit' && isset($_GET['id'])) {
+    $response = controllerAdminCategory::categoryEditForm($_GET['id']);
+}
+elseif ($path == 'categoryEditResult' && isset($_GET['id'])) {
+    $response = controllerAdminCategory::categoryEditResult($_GET['id']);
+}
+elseif ($path == 'categoryDel' && isset($_GET['id'])) {
+    $response = controllerAdminCategory::categoryDeleteForm($_GET['id']);
+}
+elseif ($path == 'categoryDelResult' && isset($_GET['id'])) {
+    $response = controllerAdminCategory::categoryDeleteResult($_GET['id']);
+}
 else {
     // Страница не существует
     $response = controllerAdmin::error404();
