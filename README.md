@@ -40,3 +40,7 @@ The project includes a secure admin panel with full CRUD (Create, Read, Update, 
 3. Ensure the DB connection settings in `inc/Database.php` are correct (default is login `root`, empty password, database `news_portal`).
 4. Open your browser and go to `http://localhost/news_portal/`.
 5. To access the admin panel, navigate to `http://localhost/news_portal/admin/` (Credentials: `admin@newsportal.ee` / `123456`).
+
+## Project Planning (Jira)
+The development progress and timeline for this project are tracked in Jira:
+- [Jira Timeline](https://ivkhk-team-newportaltest.atlassian.net/jira/software/projects/NP/boards/34/timeline)
